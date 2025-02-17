@@ -102,16 +102,16 @@ const Product = ({ history }) => {
     reader.readAsDataURL(e.target.files[0]);
   };
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    const productInf = {
-      ...userInf,
-      categories: cat,
-      color: color,
-      size: size,
-    };
-    updateProduct(productId, productInf, dispatch);
-  };
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   const productInf = {
+  //     ...userInf,
+  //     categories: cat,
+  //     color: color,
+  //     size: size,
+  //   };
+  //   updateProduct(productId, productInf, dispatch);
+  // };
 
   return (
     <div className="flex-6 p-5 items-start">

@@ -67,6 +67,7 @@ const StatusChart = () => {
               style={{ cursor: "pointer", outline: "none" }} // Ensure no outline on focus
             >
               {orderAmount.map((entry, index) => (
+                
                 <Cell
                   key={`cell-${index}`}
                   fill={COLORS[index % COLORS.length]}

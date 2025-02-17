@@ -30,6 +30,7 @@ const SellChart = () => {
         const res = fetch("/orders.json");
         const data = await res.json();
         data.map((item) => {
+          console.log('orders',item);
           setOrderAmount((prev) => [
             ...prev,
             {

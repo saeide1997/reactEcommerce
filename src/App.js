@@ -24,6 +24,7 @@ function App() {
       .then((res) => res.text())
       .then((data) => setMessage(data));
   }, []);
+  console.log(message);
   // const admin = JSON.parse(JSON.parse(localStorage.getItem('persist:root')).user).currentUser.isAdmin
   return (
     

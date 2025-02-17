@@ -1,0 +1,329 @@
+[
+  {
+    "_id": "66b74a9f766146d2adedf68b",
+    "title": "انگشتر طرحدار1212",
+    "desc": "desc",
+    "img": "https://img.freepik.com/free-psd/close-up-golden-ring-isolated_23-2151217892.jpg?size=626&ext=jpg&ga=GA1.1.841102638.1723615372&semt=ais_hybrid",
+    "categories": [
+      "حلقه"
+    ],
+    "size": [
+      "s",
+      "xl",
+      "xll"
+    ],
+    "color": [
+      "silver",
+      "pelatin"
+    ],
+    "price": 74120000,
+    "inStock": true,
+    "id": "2",
+    "updatedAt": "2024-10-08T10:53:14.169Z"
+  },
+  {
+    "_id": "66bc4a8827bf3b53d25dd8eb",
+    "title": "حلقه سه تایی",
+    "desc": "descccc",
+    "img": "https://img.freepik.com/free-psd/close-up-golden-rings_23-2151197298.jpg?size=626&ext=jpg&ga=GA1.2.841102638.1723615372&semt=ais_hybrid",
+    "categories": [
+      "حلقه",
+      "مردانه"
+    ],
+    "size": [
+      "l",
+      "xl",
+      "xll"
+    ],
+    "color": [
+      "gold",
+      "steel",
+      "pelatin"
+    ],
+    "price": "6520000",
+    "inStock": true,
+    "id": "3"
+  },
+  {
+    "_id": "66bc4ab927bf3b53d25dd8ec",
+    "title": "انگشتر نگین رنگی",
+    "desc": "descccc",
+    "img": "https://img.freepik.com/free-photo/beautiful-ring-with-gemstone-diamonds_1203-1524.jpg?size=626&ext=jpg&ga=GA1.2.841102638.1723615372&semt=ais_hybrid",
+    "categories": [
+      "زنانه",
+      "حلقه"
+    ],
+    "size": [
+      "l",
+      "xl",
+      "xll"
+    ],
+    "color": [
+      "black",
+      "pink",
+      "yellow"
+    ],
+    "price": "8540000",
+    "inStock": false,
+    "id": "4"
+  },
+  {
+    "_id": "66bc4aee27bf3b53d25dd8ed",
+    "title": "Jewelry6",
+    "desc": "descccc",
+    "img": "https://img.freepik.com/free-photo/golden-accessory-with-diamonds_1203-1531.jpg?size=626&ext=jpg&ga=GA1.2.841102638.1723615372&semt=ais_hybrid",
+    "categories": "woman",
+    "size": [
+      "l",
+      "xl",
+      "xll"
+    ],
+    "color": [
+      "black",
+      "pink",
+      "yellow"
+    ],
+    "price": "5205000",
+    "inStock": false,
+    "id": "5"
+  },
+  {
+    "_id": "66e7f5ede0bee5a6e74e6a38",
+    "title": "دستبند",
+    "desc": "descccc",
+    "img": "https://admin.pngadgil1832.com/UploadedFiles/ProductImages/BRL4764122PNG_01.png",
+    "categories": [
+      "زنانه",
+      "دستبند"
+    ],
+    "size": [
+      "l",
+      "xl",
+      "xll"
+    ],
+    "color": [
+      "black",
+      "pink",
+      "yellow"
+    ],
+    "price": "8540000",
+    "inStock": false,
+    "id": "40"
+  },
+  {
+    "_id": "66e7f645e0bee5a6e74e6a39",
+    "title": " دستبند رنگی",
+    "desc": "descccc",
+    "img": "https://static.vecteezy.com/system/resources/thumbnails/022/110/443/small_2x/butterfly-gold-bracelet-with-pink-gemstone-png.png",
+    "categories": [
+      "زنانه",
+      "دستبند"
+    ],
+    "size": [
+      "l",
+      "xl",
+      "xll"
+    ],
+    "color": [
+      "black",
+      "pink",
+      "yellow"
+    ],
+    "price": "8540000",
+    "inStock": false,
+    "id": "40"
+  },
+  {
+    "_id": "66e7f942e0bee5a6e74e6a3a",
+    "title": "گردنبند قلبی",
+    "desc": "descccc",
+    "img": "https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Gold_Heart_Necklace_PNG_Clip_Art_Image.png?m=1629807920",
+    "categories": [
+      "زنانه",
+      "گردنبند"
+    ],
+    "size": [
+      "l",
+      "xl",
+      "xll"
+    ],
+    "color": [
+      "black",
+      "pink",
+      "yellow"
+    ],
+    "price": "8540000",
+    "inStock": false,
+    "id": "40"
+  },
+  {
+    "_id": "66e7f97ae0bee5a6e74e6a3b",
+    "title": "گردنبند با سنگ ",
+    "desc": "desss",
+    "img": "https://pngimg.com/d/necklace_PNG65.png",
+    "categories": [
+      "حلقه"
+    ],
+    "size": [
+      "لارج"
+    ],
+    "color": [
+      "طلایی"
+    ],
+    "price": 7000000,
+    "inStock": false,
+    "id": "40",
+    "updatedAt": "2024-10-08T06:27:47.405Z"
+  },
+  {
+    "_id": "66e7f99fe0bee5a6e74e6a3c",
+    "title": "گردنبند پرطرفدار",
+    "desc": "descccc",
+    "img": "https://www.freepnglogos.com/uploads/necklace-png/multi-shape-diamond-fringe-necklace-classic-graff-graff-10.png",
+    "categories": [
+      "زنانه",
+      "گردنبند"
+    ],
+    "size": [
+      "l",
+      "xl",
+      "xll"
+    ],
+    "color": [
+      "black",
+      "pink",
+      "yellow"
+    ],
+    "price": "18540000",
+    "inStock": false,
+    "id": "40"
+  },
+  {
+    "_id": "670530843e1591b96938d4e3",
+    "title": "دسبند طلایی خودکاری",
+    "desc": "دستبند",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shopping-site-380ba.appspot.com/o/17283933256607642346465b8974aa77f1044360c525be81fec33_1665412754.jpg?alt=media&token=6173dc87-6526-4560-9f7a-dafb462a3929",
+    "categories": [
+      "دستبند",
+      " طلا"
+    ],
+    "size": [
+      "لارج"
+    ],
+    "color": [
+      "طلایی",
+      " نقره ای"
+    ],
+    "price": 74120000,
+    "inStock": true,
+    "createdAt": "2024-10-08T13:15:48.646Z",
+    "updatedAt": "2024-10-08T13:15:48.646Z",
+    "__v": 0
+  },
+  {
+    "_id": "67054d3b646c163c55fb2971",
+    "title": "rrrr",
+    "desc": "ffff",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shopping-site-380ba.appspot.com/o/17284006951421599741957570.jpg?alt=media&token=f108e6ce-88e1-451a-b8eb-a6db9c116efc",
+    "categories": [
+      "ss"
+    ],
+    "size": [
+      "f"
+    ],
+    "color": [
+      "dd"
+    ],
+    "price": 44444,
+    "inStock": true,
+    "createdAt": "2024-10-08T15:18:19.197Z",
+    "updatedAt": "2024-10-08T15:18:19.197Z",
+    "__v": 0
+  },
+  {
+    "_id": "670550ab646c163c55fb297b",
+    "title": "qqq",
+    "desc": "qq",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shopping-site-380ba.appspot.com/o/172840157724210.png?alt=media&token=1835dda8-8c14-4e8a-b807-11c3e040f5f3",
+    "categories": [
+      "gg"
+    ],
+    "size": [
+      "ff"
+    ],
+    "color": [
+      "ff"
+    ],
+    "price": 999,
+    "inStock": true,
+    "createdAt": "2024-10-08T15:32:59.096Z",
+    "updatedAt": "2024-10-08T15:32:59.096Z",
+    "__v": 0
+  },
+  {
+    "_id": "670550d8646c163c55fb297f",
+    "title": "9qqq",
+    "desc": "9qq",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shopping-site-380ba.appspot.com/o/172840162292210.png?alt=media&token=6a98d525-04fa-42bb-95f8-d89d014654c7",
+    "categories": [
+      "gg"
+    ],
+    "size": [
+      "ff"
+    ],
+    "color": [
+      "ff"
+    ],
+    "price": 999,
+    "inStock": true,
+    "createdAt": "2024-10-08T15:33:44.422Z",
+    "updatedAt": "2024-10-08T15:33:44.422Z",
+    "__v": 0
+  },
+  {
+    "_id": "6705533b646c163c55fb2985",
+    "title": "qqqqq",
+    "desc": "hhhh",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shopping-site-380ba.appspot.com/o/17284022339061599741957570.jpg?alt=media&token=9d3630ed-f32b-4f89-a61c-e510826f8491",
+    "categories": [
+      "hh"
+    ],
+    "size": [
+      "h"
+    ],
+    "color": [
+      "hh"
+    ],
+    "price": 666,
+    "inStock": true,
+    "createdAt": "2024-10-08T15:43:55.947Z",
+    "updatedAt": "2024-10-08T15:43:55.947Z",
+    "__v": 0
+  },
+  {
+    "_id": "67066f7bb123420a7dbda928",
+    "title": "qqqwwee",
+    "desc": "rrrt",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shopping-site-380ba.appspot.com/o/1728474965063Screenshot%20from%202024-10-02%2011-49-34.png?alt=media&token=682ae16f-6ec0-4e58-9680-25f326ad42fc",
+    "categories": [],
+    "size": [],
+    "color": [],
+    "inStock": true,
+    "createdAt": "2024-10-09T11:56:43.653Z",
+    "updatedAt": "2024-10-09T11:56:43.653Z",
+    "__v": 0
+  },
+  {
+    "_id": "6706708ab123420a7dbda92f",
+    "title": "www",
+    "desc": "www",
+    "img": "https://firebasestorage.googleapis.com/v0/b/shopping-site-380ba.appspot.com/o/1728475268689Screenshot%20from%202024-10-02%2011-49-34.png?alt=media&token=45afaf32-d9dd-4ac6-baa9-428ddb661c3a",
+    "categories": [],
+    "size": [],
+    "color": [],
+    "inStock": true,
+    "createdAt": "2024-10-09T12:01:14.429Z",
+    "updatedAt": "2024-10-09T12:01:14.429Z",
+    "__v": 0
+  }
+]

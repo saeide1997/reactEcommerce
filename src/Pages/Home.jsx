@@ -27,6 +27,7 @@ const Home = () => {
       try{
         const res =  await userRequest.get('/users/stats')
         res.data.map(item => {
+          console.log('users', item);
           setUserStats(prev => [
             ...prev,
             {

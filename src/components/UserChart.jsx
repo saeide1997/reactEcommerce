@@ -29,6 +29,7 @@ const UserChart = () => {
         // await userRequest.get("/users/stats");
         const data = await res.json();
         data.map((item) => {
+          console.log('users',item);
           setUserStats((prev) => [
             ...prev,
             {

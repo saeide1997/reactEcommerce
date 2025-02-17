@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "66bafd469b5a225b0543f513",
+    "id": 1,
+    "name": "catty",
+    "color": [
+      "red",
+      "pink"
+    ],
+    "image": "https://img.freepik.com/premium-photo/white-cat-with-pink-nose-pink-nose_962508-11856.jpg",
+    "category": [
+      "cat",
+      "pishan"
+    ],
+    "availabel": true,
+    "__v": 0
+  },
+  {
+    "_id": "66bafd699b5a225b0543f515",
+    "id": 2,
+    "name": "catty2",
+    "color": [
+      "red",
+      "pink"
+    ],
+    "image": "https://img.freepik.com/premium-photo/white-cat-with-blue-eyes_900775-330.jpg?w=360",
+    "category": [
+      "cat",
+      "pishan"
+    ],
+    "availabel": true,
+    "__v": 0
+  },
+  {
+    "_id": "66bafd849b5a225b0543f517",
+    "id": 3,
+    "name": "cat",
+    "color": [
+      "red",
+      "purple"
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmbc4YToclOg_z75POxniY4JLc36V_0dPLXA&s",
+    "category": [
+      "cat",
+      "pishan"
+    ],
+    "availabel": true,
+    "__v": 0
+  }
+]

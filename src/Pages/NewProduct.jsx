@@ -31,22 +31,22 @@ const NewProduct = (props) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [percentage, setPercentage] = useState(0);
-  const [isError, setIsError] = useState(false);
+  // const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   // State for the main progress bar
-  const [progressMain, setProgressMain] = useState();
-  const ProgressBar = ({ uploadState, percentUploaded }) =>
-    uploadState === "uploading" && (
-      <Progress
-        className="progress__bar"
-        percent={percentUploaded}
-        progress
-        indicating
-        size="medium"
-        inverted
-      />
-    );
+  // const [progressMain, setProgressMain] = useState();
+  // const ProgressBar = ({ uploadState, percentUploaded }) =>
+  //   uploadState === "uploading" && (
+  //     <Progress
+  //       className="progress__bar"
+  //       percent={percentUploaded}
+  //       progress
+  //       indicating
+  //       size="medium"
+  //       inverted
+  //     />
+  //   );
 
   const handleChange = (e) => {
     setUserInf((prev) => {
@@ -111,6 +111,8 @@ const NewProduct = (props) => {
         }
       },
       (error) => {
+        console.log(error);
+        
         // Handle unsuccessful uploads
       },
       () => {
