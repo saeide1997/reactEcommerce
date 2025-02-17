@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "670612c66c67ebb579c20bfb",
+    "userId": "6700fd5b8e9528fb2416c029",
+    "products": [
+      {
+        "productId": "66b74a9f766146d2adedf68b",
+        "quantity": 25,
+        "_id": "670612c66c67ebb579c20bfc"
+      }
+    ],
+    "amount": 52369000,
+    "address": "address",
+    "status": "pending",
+    "createdAt": "2024-09-09T05:21:10.734Z",
+    "updatedAt": "2024-10-09T05:21:10.734Z",
+    "__v": 0
+  },
+  {
+    "_id": "670613296c67ebb579c20bfe",
+    "userId": "6700fd5b8e9528fb2416c029",
+    "products": [
+      {
+        "productId": "66b74a9f766146d2adedf68b",
+        "quantity": 25,
+        "_id": "670613296c67ebb579c20bff"
+      },
+      {
+        "productId": "66bc4a8827bf3b53d25dd8eb",
+        "quantity": 41,
+        "_id": "670613296c67ebb579c20c00"
+      }
+    ],
+    "amount": 5169000,
+    "address": "address",
+    "status": "complited",
+    "createdAt": "2024-10-09T05:22:49.308Z",
+    "updatedAt": "2024-10-09T05:22:49.308Z",
+    "__v": 0
+  },
+  {
+    "_id": "6706135d6c67ebb579c20c02",
+    "userId": "67016d00f897c7799ee07b19",
+    "products": [
+      {
+        "productId": "66bc4a8827bf3b53d25dd8eb",
+        "quantity": 41,
+        "_id": "6706135d6c67ebb579c20c03"
+      }
+    ],
+    "amount": 500000,
+    "address": "address",
+    "status": "cancelled",
+    "createdAt": "2024-07-19T05:23:41.064Z",
+    "updatedAt": "2024-10-19T05:23:41.064Z",
+    "__v": 0
+  }
+]

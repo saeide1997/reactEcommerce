@@ -25,8 +25,10 @@ const UserChart = () => {
   useEffect(() => {
     const getStats = async () => {
       try {
-        const res = await userRequest.get("/users/stats");
-        res.data.map((item) => {
+        const res = fetch("/users.json");
+        // await userRequest.get("/users/stats");
+        const data = await res.json();
+        data.map((item) => {
           setUserStats((prev) => [
             ...prev,
             {

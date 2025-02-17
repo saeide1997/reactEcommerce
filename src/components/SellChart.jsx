@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import Chart from "../components/Chart";
 import { userRequest } from "../requestMethods";
 
+
 const SellChart = () => {
   const [orderAmount, setOrderAmount] = useState([]);
   const months = useMemo(
@@ -23,10 +24,12 @@ const SellChart = () => {
   );
 
   useEffect(() => {
-    const getStats = async () => {
+    const getStats = 
+    async () => {
       try {
-        const res = await userRequest.get("orders/year");
-        res.data.map((item) => {
+        const res = fetch("/orders.json");
+        const data = await res.json();
+        data.map((item) => {
           setOrderAmount((prev) => [
             ...prev,
             {

@@ -2,6 +2,7 @@ import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
 import Home from "./Pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
 import UserList from './Pages/UserList';
 import User from "./Pages/User";
 import NewUser from "./Pages/NewUser";
@@ -16,10 +17,18 @@ import Analisys from "./Pages/Analisys";
 const history = createBrowserHistory();
 
 function App() {
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("https://eccommerce-node-production.up.railway.app/")
+      .then((res) => res.text())
+      .then((data) => setMessage(data));
+  }, []);
   // const admin = JSON.parse(JSON.parse(localStorage.getItem('persist:root')).user).currentUser.isAdmin
   return (
     <BrowserRouter>
     <Routes>
+    <h1>{message}</h1>;
           <Route path="/login" element={<LoginPage/>} />
           </Routes>
 
