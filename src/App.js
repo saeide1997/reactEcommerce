@@ -26,9 +26,9 @@ function App() {
   }, []);
   // const admin = JSON.parse(JSON.parse(localStorage.getItem('persist:root')).user).currentUser.isAdmin
   return (
+    
     <BrowserRouter>
     <Routes>
-    <h1>{message}</h1>;
           <Route path="/login" element={<LoginPage/>} />
           </Routes>
 
@@ -55,6 +55,8 @@ function App() {
     </BrowserRouter>
 
   );
+
+
 }
 
 export default App;
