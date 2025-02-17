@@ -44,11 +44,13 @@ const WidgetLg = () => {
       <span className="text-3xl">آخرین تراکنشها</span>
       <table className="border-separate border-spacing-6 w-full">
         <thead className="text-center ">
+        <tr>
           <th className="">مشتری</th>
           <th className="">تاریخ</th>
           <th className="">مقدار</th>
           <th className="">وضعیت</th>
           <th className="">عملیات</th>
+          </tr>
         </thead>
         <tbody className="text-center">
           {orders.map((order) => (
