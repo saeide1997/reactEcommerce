@@ -62,7 +62,7 @@ const WidgetLg = () => {
                   alt=""
                 />
                 <span className="">
-                  {userInf.find((item) => item._id === order.userId).userName}{" "}
+                  {/* {userInf.find((item) => item._id === order.userId).userName}{" "} */}
                 </span>
               </td>
               <td className="mr-6 text-gray-500">{format(order.CreatedAt)}</td>
