@@ -57,8 +57,8 @@ const ProductList = () => {
   }
 
     return (
-        <div className=' mx-10 mt-10 ' >
-             <DataGrid className='lightShab max-w-full'
+        <div className=' mx-10 mt-5 ' >
+             <DataGrid className='lightShab w-[calc(100vw-200px)]'
              initialState={{
               pagination: {
                 paginationModel: { pageSize: 7, page: 0 },

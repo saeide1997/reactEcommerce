@@ -97,9 +97,9 @@ const UserList = () => {
   };
 
   return (
-    <div className=" mx-5 mt-10 !max-w-[calc(100vw-200px)]">
+    <div className=" mx-5 mt-5 !max-w-[calc(100vw-200px)]">
       <DataGrid
-        className=" h-[80%] rounded-lg"
+        className=" h-[80%] rounded-lg w-[calc(100vw-200px)]"
         initialState={{
           pagination: {
             paginationModel: { pageSize: 8, page: 0 },

@@ -105,9 +105,9 @@ const OrderList = () => {
   ];
 
   return (
-    <div className=" !max-w-[calc(100vw-200px)] mx-10 mt-10 ">
+    <div className=" !max-w-[calc(100vw-200px)] mx-10 mt-5 ">
       <DataGrid
-        className="lightShab max-w-full"
+        className="lightShab w-[calc(100vw-200px)]"
         initialState={{
           pagination: {
             paginationModel: { pageSize: 7, page: 0 },
