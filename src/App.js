@@ -20,7 +20,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://eccommerce-node-production.up.railway.app/")
+    fetch("https://ecommercedata.up.railway.app/")
       .then((res) => res.text())
       .then((data) => setMessage(data));
   }, []);

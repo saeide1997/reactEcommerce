@@ -2,7 +2,7 @@ import { PeopleOutlined } from '@mui/icons-material';
 import { useSelector } from 'react-redux';
 
 const TotalUser = () => {
-  const userInf = useSelector((state) => state.user.users);
+  const userInf = useSelector((state) => state.user.users); 
   const userLen = userInf.length
 
   var nf = new Intl.NumberFormat();
