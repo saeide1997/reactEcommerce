@@ -64,7 +64,7 @@ const Home = () => {
     getStats();
   }, [months]);
   return (
-    <div className=" mt-5 !max-w-[calc(100vw-150px)]">
+    <div className=" mt-5 w-[calc(100vw-150px)]">
       <FeaturedInfo />
       <div className="flex">
       <Chart

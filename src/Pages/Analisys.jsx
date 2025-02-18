@@ -9,7 +9,7 @@ import UserChart from "../components/UserChart";
 
 const Analisys = () => {
   return (
-    <div className=" h-screen !max-w-[calc(100vw-180px)] mt-5 ">
+    <div className=" h-screen w-[calc(100vw-180px)] mt-5 ">
       <div className="flex h-1/2 mx-3 ">
         <UserChart className="" />
         <OrderChart className="" />
