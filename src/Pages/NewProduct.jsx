@@ -148,15 +148,15 @@ const NewProduct = (props) => {
   return (
     <div className="flex-6 p-5 items-start">
       {/* <h1 className="">کاربر جدید</h1> */}
-      <div className=" p-5 m-5 shadow">
+      <div className=" p-5 m-5  shadow  bg-gray-800 rounded-2xl text-white">
         <form className="flex justify-between mt-5" action="">
           <div className="flex flex-wrap">
-            <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+            <div className="flex flex-col w-[50%] ">
+              <label className=" text-md mb-1" htmlFor="">
                 نام محصول
               </label>
               <input
-                className=" w-[50%] h-8 mb-10"
+                className=" w-[50%] h-10 mb-6 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -164,12 +164,12 @@ const NewProduct = (props) => {
                 id=""
               />
             </div>
-            <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+            <div className="flex flex-col w-[50%] ">
+              <label className="  text-md  mb-1" htmlFor="">
                 توضیحات محصول
               </label>
               <input
-                className=" w-[50%] h-8 mb-10"
+                className=" w-[50%] h-10 mb-6 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -177,12 +177,12 @@ const NewProduct = (props) => {
                 id=""
               />
             </div>
-            <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+            <div className="flex flex-col w-[50%] ">
+              <label className="  text-md  mb-1" htmlFor="">
                 قیمت محصول
               </label>
               <input
-                className=" w-[50%] h-8 mb-10"
+                className=" w-[50%] h-10 mb-6 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -190,12 +190,12 @@ const NewProduct = (props) => {
                 id=""
               />
             </div>
-            <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+            <div className="flex flex-col w-[50%] ">
+              <label className="  text-md  mb-1" htmlFor="">
                 کتگوری محصول
               </label>
               <input
-                className=" w-[50%] h-8 mb-10"
+                className=" w-[50%] h-10 mb-6 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
                 onChange={handleCat}
@@ -203,12 +203,12 @@ const NewProduct = (props) => {
                 id=""
               />
             </div>
-            <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+            <div className="flex flex-col w-[50%] ">
+              <label className="  text-md  mb-1" htmlFor="">
                 رنگ محصول
               </label>
               <input
-                className=" w-[50%] h-8 mb-10"
+                className=" w-[50%] h-10 mb-6 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleColor}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -216,12 +216,12 @@ const NewProduct = (props) => {
                 id=""
               />
             </div>
-            <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+            <div className="flex flex-col w-[50%] ">
+              <label className="  text-md  mb-1" htmlFor="">
                 سایز محصول
               </label>
               <input
-                className=" w-[50%] h-8 mb-10"
+                className=" w-[50%] h-10 mb-6 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleSize}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -229,13 +229,13 @@ const NewProduct = (props) => {
                 id=""
               />
             </div>
-            <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" for="stock">
+            <div className="flex flex-col w-[50%] ">
+              <label className="  text-md  mb-1" for="stock">
                 موجودی
               </label>
               <select
                 onChange={handleChange}
-                className="h-10 w-[50%] rounded-md pr-2"
+                className="h-10 w-[50%] rounded-md pr-2 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 name="inStock"
                 id="stock"
               >
@@ -250,9 +250,9 @@ const NewProduct = (props) => {
               <div className="flex-1 flex justify-center items-center my-5 flex-col">
                 <label htmlFor="avatar">
                   <Publish className="my-3 cursor-pointer" />
-                  <button className="w-28 shadow mr-1" onClick={uploadImage}>آپلود</button>
+                  <button className="w-20 shadow mr-1" onClick={uploadImage}>آپلود</button>
                 </label>
-                <div className="w-full h-10 bg-gray-100 relative text-teal-950">
+                <div className="w-full h-10 border border-blue-950 relative shadow bg-blue-600/10 outline-none">
                   {percentage ? (
                     <div
                       className="h-10 flex justify-center items-center"

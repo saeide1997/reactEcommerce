@@ -45,15 +45,15 @@ const StatusChart = () => {
   }, []);
   // console.log(orderAmount);
 
-  const COLORS = ["#ff7139db", "#ff2121de", "#21ff2f91", "#686868"];
+  const COLORS = ["#d17f49", "#c34a53", "#418b64", "#545454"];
 
   const onPieEnter = (_, index) => {
     setActiveIndex(index);
   };
 
   return (
-    <div className=" shadow p-3 m-5 min-w-[500px] ">
-      <h2 className=" m-2">وضعیت سفارشات</h2>
+    <div className=" shadow p-3 !max-h-[260px] text-white bg-gray-800 rounded-2xl min-w-[500px] ">
+      <h2 className="  text-md  mx-2 mb-4">وضعیت سفارشات</h2>
       <div className="flex items-center">
         <div>
           <PieChart width={200} height={200}>
@@ -79,15 +79,15 @@ const StatusChart = () => {
         </div>
         <div className="mx-10">
           <div className="flex my-3 items-center">
-            <div className="h-5 w-5 bg-orange-600 rounded-full mx-3"></div>
+            <div className="h-5 w-5 bg-orange-400/50 rounded-full mx-3"></div>
             <span className="">در انتظار برسی</span>
           </div>
           <div className="flex my-3 items-center">
-            <div className="h-5 w-5 bg-green-600 rounded-full mx-3"></div>
+            <div className="h-5 w-5 bg-green-600/50 rounded-full mx-3"></div>
             <span className="">تکمیل شده</span>
           </div>
           <div className="flex my-3 items-center">
-            <div className="h-5 w-5 bg-red-600 rounded-full mx-3"></div>
+            <div className="h-5 w-5 bg-red-600/50 rounded-full mx-3"></div>
             <span className="">لغو شده</span>
           </div>
           <div className="flex my-3 items-center">

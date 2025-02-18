@@ -3,8 +3,8 @@ import React from "react";
 
 const Topbar = () => {
   return (
-    <div className="w-full h-16 bg-white sticky top-0 z-50">
-      <div className="h-full px-5 flex items-center justify-between bg-teal-600/80 rounded-bl-3xl">
+    <div className="w-full h-16 sticky top-0 z-50">
+      <div className="h-full px-5 flex items-center justify-between bg-gray-800 Sahdow3d rounded-bl-3xl">
         <div className="mt-6"><span className="text-[50px] text-white cursor-pointer">SOHO.</span></div>
         <div className="flex items-center">
             <div className="relative mx-1 cursor-pointer text-white">

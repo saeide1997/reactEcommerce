@@ -21,7 +21,7 @@ const NewUser = () => {
 
     return (
         <div className="flex-6 p-5 items-start">
-<div className=" p-5 m-5 shadow">
+<div className=" p-5 m-5  shadow  bg-gray-800 rounded-2xl text-white">
         <form className="  flex justify-between mt-5" action="">
           <div className="flex-3 flex flex-wrap">
             <div className="flex flex-col w-[50%] mt-3 mb-10">
@@ -29,7 +29,7 @@ const NewUser = () => {
                 نام کاربری
               </label>
               <input
-                className=" w-[250px] h-8"
+                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -42,7 +42,7 @@ const NewUser = () => {
                 نام و نام خانوادگی{" "}
               </label>
               <input
-                className=" w-[250px] h-8"
+                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -55,7 +55,7 @@ const NewUser = () => {
                 نقش{" "}
               </label>
               <input
-                className=" w-[250px] h-8"
+                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -68,7 +68,7 @@ const NewUser = () => {
                 شماره تماس{" "}
               </label>
               <input
-                className=" w-[250px] h-8"
+                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="tel"
@@ -81,7 +81,7 @@ const NewUser = () => {
                 ایمیل{" "}
               </label>
               <input
-                className=" w-[250px] h-8"
+                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="email"
@@ -94,7 +94,7 @@ const NewUser = () => {
                 رمز عبور{" "}
               </label>
               <input
-                className=" w-[250px] h-8"
+                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="password"

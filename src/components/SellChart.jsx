@@ -46,10 +46,10 @@ const SellChart = () => {
   return (
     <div className="w-[400px] h-[300px] ">
       <Chart
-        classs="m-5 py-3 px-5 shadow"
-        c1= "#ff5400"
-        c2= "#ff5400"
-        c3= "#ff854a"
+        classs="m-5 py-3 px-5  shadow bg-gray-800 rounded-2xl text-white "
+        c1= "#d5b4b5"
+        c2= "#d5b4b5"
+        c3= "#d5b4b5"
         height1="3"
         height2="2"
         data={orderAmount}

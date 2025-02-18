@@ -4,6 +4,9 @@ import {
   PointOfSaleOutlined,
   ShoppingCartOutlined,
 } from "@mui/icons-material";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
+import AssignmentReturnIcon from "@mui/icons-material/AssignmentReturn";
+import SavingsIcon from "@mui/icons-material/Savings";
 import { userRequest } from "../requestMethods";
 import React, { useEffect, useState } from "react";
 
@@ -49,15 +52,16 @@ const FeaturedInfo = () => {
   // console.log('w',income);
 
   return (
-    <div className="w-full flex justify-between">
-      <div className="flex-1 flex items-center justify-between h-[150px] mx-5 p-7 shadow">
-        <div>
-          <span className="flex text-2xl">
-            درآمد <h3 className="mr-2 text-teal-800 ">{monthDefini()}</h3>
-          </span>
-          <div className="my-4 items-center flex">
-            <span className="text-2xl"> {nf.format(income.total)} ریال </span>
-            <span className="flex items-center mr-5 ltr">
+    <div className="flex justify-between">
+      <div className="flex-1 !w-1/5 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+          <div className=" items-center flex justify-between ">
+            <span className="flex  text-md ">
+              درآمد{" "}
+              <h3 className="mr-2 text-green-300/50 font-bold ">
+                {monthDefini()}
+              </h3>
+            </span>
+            <span className="flex text-sm items-center mr-5 ltr">
               {Math.floor(incomepercent)}%{" "}
               {incomepercent > 0 && (
                 <ArrowUpward className="text-sm ml-1 text-green-500" />
@@ -67,20 +71,69 @@ const FeaturedInfo = () => {
               )}
             </span>
           </div>
+        <div className="flex items-center  justify-between ">
+          <span className=""> {nf.format(income.total)} ریال </span>
+
+          <SavingsIcon className="!text-[70px] !text-green-300/60 mr-5" />
         </div>
-        <PointOfSaleOutlined className="!text-[70px] !text-teal-900 ml-5" />
       </div>
-      <div className="flex-1  flex items-center justify-between h-[150px] mx-5 p-7 shadow">
-        <div>
-          <span className="flex text-2xl">
-            فروش <h3 className="mr-2 text-teal-800 ">{monthDefini()}</h3>
-          </span>
-          <div className="my-4 items-center flex">
-            <span className="text-2xl">
-              {" "}
-              {nf.format(income.quantity)} محصول{" "}
+      <div className="flex-1 !w-1/5 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+          <div className=" items-center flex justify-between ">
+            <span className="flex  text-md ">
+              فروش{" "}
+              <h3 className="mr-2 text-orange-300/80 font-bold ">
+                {monthDefini()}
+              </h3>
             </span>
-            <span className="flex items-center mr-5 ltr">
+            <span className="flex text-sm items-center mr-5 ltr">
+              {Math.floor(incomepercent)}%{" "}
+              {incomepercent > 0 && (
+                <ArrowUpward className="text-sm ml-1 text-green-500" />
+              )}
+              {incomepercent < 0 && (
+                <ArrowDownward className="text-sm ml-1 text-red-500" />
+              )}
+            </span>
+          </div>
+        <div className="flex items-center  justify-between ">
+          <span className=""> {nf.format(income.total)} ریال </span>
+
+          <ShoppingCartOutlined className="!text-[70px] !text-orange-300/80 mr-5" />
+        </div>
+      </div>
+      <div className="flex-1 !w-1/5 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+          <div className=" items-center flex justify-between ">
+            <span className="flex  text-md ">
+              مرجوع{" "}
+              <h3 className="mr-2 !text-blue-300/80 font-bold ">
+                {monthDefini()}
+              </h3>
+            </span>
+            <span className="flex text-sm items-center mr-5 ltr">
+              {Math.floor(incomepercent)}%{" "}
+              {incomepercent > 0 && (
+                <ArrowUpward className="text-sm ml-1 text-green-500" />
+              )}
+              {incomepercent < 0 && (
+                <ArrowDownward className="text-sm ml-1 text-red-500" />
+              )}
+            </span>
+          </div>
+        <div className="flex items-center  justify-between ">
+          <span className=""> {nf.format(income.total)} ریال </span>
+
+          <AssignmentReturnIcon className="!text-[70px] !text-blue-300/80 mr-5" />
+        </div>
+      </div>
+      <div className="flex-1 !w-1/5 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+          <div className=" items-center flex justify-between ">
+            <span className="flex  text-md ">
+            خرید{" "}
+              <h3 className="mr-2 text-red-300/80  font-bold ">
+                {monthDefini()}
+              </h3>
+            </span>
+            <span className="flex text-sm items-center mr-5 ltr">
               {Math.floor(sellpercent)}%{" "}
               {sellpercent > 0 && (
                 <ArrowUpward className="text-sm ml-1 text-green-500" />
@@ -90,9 +143,13 @@ const FeaturedInfo = () => {
               )}
             </span>
           </div>
+        <div className="flex items-center  justify-between ">
+        <span className=""> {nf.format(income.quantity)} محصول </span>
+
+          <LocalMallIcon className="!text-[70px] !text-red-300/80  mr-5" />
         </div>
-        <ShoppingCartOutlined className="!text-[70px] !text-teal-900 ml-5" />
       </div>
+
     </div>
   );
 };

@@ -26,6 +26,7 @@
 body{
     direction: rtl;
     font-family: 'ShabnamLight' !important;
+    background: #3d424b;
 }
 .lightShab{
     font-family: 'ShabnamLight' !important;
@@ -40,10 +41,10 @@ body{
     display: flex;
     /* margin-top: 10px; */
 }
-.other{
+/* .other{
     flex: 5;
     background-color: bisque;
-}
+} */
 .flex-6{
     flex: 6;
 }
@@ -63,7 +64,7 @@ body{
     flex: 1;
 }
 .shadow{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .MuiDataGrid-cell{
     display: flex;
@@ -73,4 +74,23 @@ body{
 }
 .MuiIconButton-root{
     rotate: 180deg;
+}
+.Sahdow3d{
+    box-shadow: rgb(0 0 0 / 58%) 0px 10px 20px, rgb(0 0 0 / 21%) 0px 2px 30px
+}
+.MuiDataGrid-root{
+    border-radius: 10px !important;
+    background-color: #3d4653;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.MuiDataGrid-cell{
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'ShabnamMid' !important;
+}
+.MuiDataGrid-columnHeaderTitleContainer{
+    font-size: 1rem;
+    font-family: 'ShabnamMid' !important;
+
 }

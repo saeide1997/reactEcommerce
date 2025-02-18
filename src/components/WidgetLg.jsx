@@ -40,7 +40,7 @@ const WidgetLg = () => {
     getOrders();
   }, []);
   return (
-    <div className="flex-2 shadow p-5 ml-5">
+    <div className="flex-2 shadow p-5 ml-5  text-white items-center bg-gray-800 rounded-2xl ">
       <span className="text-3xl">آخرین تراکنشها</span>
       <table className="border-separate border-spacing-6 w-full">
         <thead className="text-center ">
@@ -73,7 +73,7 @@ const WidgetLg = () => {
                   {order.status}
                 </button>
               </td>
-              <td className="bg-teal-600/50 shadow mr-6 h-10 text-black rounded-md  hover:shadow-none flex justify-center items-center">              
+              <td className="bg-teal-600 shadow mr-6 h-10 text-black font-semibold rounded-md  hover:shadow-none flex justify-center items-center">              
               <button className=" ">
                 <Link to={"/order/" + order._id}>
                 جزییات سفارش

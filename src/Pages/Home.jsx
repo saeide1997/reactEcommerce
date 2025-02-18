@@ -6,55 +6,95 @@ import WidgetSm from "../components/WidgetSm";
 import { userRequest } from "../requestMethods";
 
 const Home = () => {
-  const [userStats, setUserStats] = useState([])
-  const months = useMemo(()=>[
-    'فروردین' ,
-    'اردیبهشت' ,
-    'خرداد' ,
-    'تیر' ,
-    'مرداد' ,
-    'شهریور' ,
-    'مهر' ,
-    'آبان' ,
-    'آذر' ,
-    'دی' ,
-    'بهمن' ,
-    'اسفند' ,
-  ],[])
+  const [userStats, setUserStats] = useState([]);
+  const [orderQuantity, setOrderQuantity] = useState([]);
 
-  useEffect(()=>{
-    const getStats = async()=>{
-      try{
-        const res =  await userRequest.get('/users/stats')
-        res.data.map(item => {
-          console.log('users', item);
-          setUserStats(prev => [
+  const months = useMemo(
+    () => [
+      "فروردین",
+      "اردیبهشت",
+      "خرداد",
+      "تیر",
+      "مرداد",
+      "شهریور",
+      "مهر",
+      "آبان",
+      "آذر",
+      "دی",
+      "بهمن",
+      "اسفند",
+    ],
+    []
+  );
+  useEffect(() => {
+    const getStats = async () => {
+      try {
+        const res = await userRequest.get("orders/year");
+        res.data.map((item) => {
+          console.log("orders", item);
+          setOrderQuantity((prev) => [
             ...prev,
             {
-              name:months[item._id-1], "کاربر جدید": item.total
-            }
-          ])
-        })
-      }
-      catch{}
-    }
-    getStats()
-  }, [months])
+              name: months[item._id - 1],
+              "جمع سفارشات ": item.quantity,
+            },
+          ]);
+        });
+      } catch {}
+    };
+    getStats();
+  }, [months]);
+
+  useEffect(() => {
+    const getStats = async () => {
+      try {
+        const res = await userRequest.get("/users/stats");
+        res.data.map((item) => {
+          console.log("users", item);
+          setUserStats((prev) => [
+            ...prev,
+            {
+              name: months[item._id - 1],
+              "کاربر جدید": item.total,
+            },
+          ]);
+        });
+      } catch {}
+    };
+    getStats();
+  }, [months]);
   return (
-    <div className="flex-6 mt-10">
+    <div className=" mt-5 !max-w-[calc(100vw-150px)]">
       <FeaturedInfo />
+      <div className="flex">
       <Chart
-      height1= '4'
-      height2= '1'
-      classs="m-5 p-5 shadow"
+        c1="#d15864"
+        c2="#d15864"
+        c3="#d15864"
+        height1="3"
+        height2="1"
+        classs="m-5 py-3 px-5  text-md  flex-1 shadow bg-gray-800 rounded-2xl text-white"
         data={userStats}
         title="فعالیت کاربران"
         grid
         dataKey="کاربر جدید"
       />
+      <Chart
+        classs="m-5 py-3 px-5  text-md  flex-1 shadow bg-gray-800 rounded-2xl text-white "
+        c1= "#92b5b9"
+        c2= "#92b5b9"
+        c3= "#92b5b9"
+        height1="3"
+        height2="1"
+        data={orderQuantity}
+        title="سفارش ماهانه"
+        grid
+        dataKey="جمع سفارشات "
+      />
+      </div>
       <div className="flex m-5 ">
-        <WidgetLg/>
-        <WidgetSm/>
+        <WidgetLg />
+        <WidgetSm />
       </div>
     </div>
   );

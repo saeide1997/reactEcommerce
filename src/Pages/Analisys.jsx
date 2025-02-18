@@ -9,13 +9,13 @@ import UserChart from "../components/UserChart";
 
 const Analisys = () => {
   return (
-    <div className="flex-6  mt-5 ">
-      <div className="flex mx-5 w-[80vw] justify-between">
+    <div className=" h-screen !max-w-[calc(100vw-180px)] mt-5 ">
+      <div className="flex h-1/2 mx-3 ">
         <UserChart className="" />
         <OrderChart className="" />
         <SellChart className="" />
       </div>
-      <div className="flex w-[80vw] justify-between items-end mx-5 my-8">
+      <div className="flex mx-3 h-1/2 mt-3">
         <StatusChart className="" />
         <div className="flex">
             <div>

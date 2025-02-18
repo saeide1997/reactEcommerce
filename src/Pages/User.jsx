@@ -41,8 +41,8 @@ const User = () => {
           </button>
         </Link>
       </div>
-      <div className=" flex mt-5">
-        <div className="flex-1 w-full p-5 shadow flex-col">
+      <div className=" flex mt-5 ">
+        <div className="flex-1 w-full p-5  shadow  bg-gray-800 rounded-2xl text-white  flex-col">
           <div className=" flex items-center">
             <img
               className="w-10 h-10 ml-10 rounded-full object-cover"
@@ -55,35 +55,35 @@ const User = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <span className="text-base boldShab text-gray-600 my-5">
+            <span className="text-base boldShab text-gray-400 my-5">
               اطلاعات حساب
             </span>
-            <div className="flex items-center mb-5 text-gray-800">
+            <div className="flex items-center mb-5 text-white">
               <PermIdentity className="text-base" />
               <span className="mr-1">{user.userName}</span>
             </div>
-            <div className="flex items-center mb-5 text-gray-800">
+            <div className="flex items-center mb-5 text-white">
               <CalendarToday className="text-base" />
               <span className="mr-1">{user.role}</span>
             </div>
-            <span className="text-base boldShab text-gray-600 my-5">
+            <span className="text-base boldShab text-gray-400 my-5">
               اطلاعات کاربر
             </span>
-            <div className="flex items-center mb-5 text-gray-800">
+            <div className="flex items-center mb-5 text-white">
               <PhoneAndroid className="text-base" />
               <span className="mr-1">{user.mobile}</span>
             </div>
-            <div className="flex items-center mb-5 text-gray-800">
+            <div className="flex items-center mb-5 text-white">
               <MailOutline className="text-base" />
               <span className="mr-1">{user.email}</span>
             </div>
-            <div className="flex items-center mb-5 text-gray-800">
+            <div className="flex items-center mb-5 text-white">
               <LocationSearching className="text-base" />
               <span className="mr-1">ایران. تبریز</span>
             </div>
           </div>
         </div>
-        <div className="flex-4 mr-5 p-5 shadow flex flex-col">
+        <div className="flex-4 mr-5 p-5  shadow flex flex-col bg-gray-800 rounded-2xl text-white ">
           <span className="text-2xl">ویرایش</span>
           <form className="flex justify-between mt-5" action="">
             <div className="flex-3 flex flex-wrap">
@@ -92,7 +92,7 @@ const User = () => {
                   نام کاربری
                 </label>
                 <input
-                  className=" w-[250px] h-8"
+                  className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                   onChange={handleChange}
                   style={{ borderBottom: "1px solid gray" }}
                   type="text"
@@ -106,7 +106,7 @@ const User = () => {
                   نام و نام خانوادگی{" "}
                 </label>
                 <input
-                  className=" w-[250px] h-8"
+                  className="w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                   onChange={handleChange}
                   style={{ borderBottom: "1px solid gray" }}
                   type="text"
@@ -120,7 +120,7 @@ const User = () => {
                   نقش{" "}
                 </label>
                 <input
-                  className=" w-[250px] h-8"
+                  className="w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                   onChange={handleChange}
                   style={{ borderBottom: "1px solid gray" }}
                   type="text"
@@ -134,7 +134,7 @@ const User = () => {
                   شماره تماس{" "}
                 </label>
                 <input
-                  className=" w-[250px] h-8"
+                  className="w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                   onChange={handleChange}
                   style={{ borderBottom: "1px solid gray" }}
                   type="tel"
@@ -148,7 +148,7 @@ const User = () => {
                   ایمیل{" "}
                 </label>
                 <input
-                  className=" w-[250px] h-8"
+                  className="w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                   onChange={handleChange}
                   style={{ borderBottom: "1px solid gray" }}
                   type="email"
@@ -162,7 +162,7 @@ const User = () => {
                   رمز عبور{" "}
                 </label>
                 <input
-                  className=" w-[250px] h-8"
+                  className="w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
                   onChange={handleChange}
                   style={{ borderBottom: "1px solid gray" }}
                   type="password"

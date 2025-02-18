@@ -124,18 +124,18 @@ const Product = ({ history }) => {
         </Link>
       </div>
       <div className="flex ">
-        <div className="flex-1">
+        <div className="flex-1 p-5 m-5  shadow  bg-gray-800 rounded-2xl text-white">
           <Chart data={productData} title=" فروش" grid dataKey="فروش" />
         </div>
-        <div className="flex-1 flex p-5 m-5 shadow">
-          <div className="flex-1 flex items-center">
+        <div className="flex-1 flex p-5 m-5  shadow  bg-gray-800 rounded-2xl text-white">
+          <div className="flex-2 flex ml-10 items-center">
             <img
-              className="w-full h-full rounded-full object-cover ml-5"
+              className="w-full h-full rounded-md object-cover ml-5"
               src={userInf.img}
               alt=""
             />
           </div>
-          <div className="flex-2 mt-3">
+          <div className="flex-3 mt-3 ">
             <div className=" flex ">
               <span className=""> شناسه: </span>
               <span className="">{userInf._id}</span>
@@ -157,21 +157,21 @@ const Product = ({ history }) => {
               <span className="">{color.join(' ')}</span>
             </div>
             <div className=" flex ">
-              <span className="">موجودی:</span>
+              <span className="">موجودی: </span>
               <span className="">{(userInf.inStock === true)?' موجود':' ناموجود' }</span>
             </div>
           </div>
         </div>
       </div>
-      <div className=" p-5 m-5 shadow">
+      <div className=" p-5 m-5  shadow  bg-gray-800 rounded-2xl text-white">
         <form className="flex justify-between mt-5" action="">
           <div className="flex flex-wrap">
             <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+              <label className="mb-1  text-md " htmlFor="">
                 نام محصول
               </label>
               <input
-                className=" w-[50%] h-8"
+                className=" w-[50%] h-8 px-2  border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -182,11 +182,11 @@ const Product = ({ history }) => {
               />
             </div>
             <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+              <label className="mb-1  text-md " htmlFor="">
                 توضیحات محصول
               </label>
               <input
-                className=" w-[50%] h-8"
+                className=" w-[50%] h-8 px-2  border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -197,11 +197,11 @@ const Product = ({ history }) => {
               />
             </div>
             <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+              <label className="mb-1  text-md " htmlFor="">
                 قیمت محصول
               </label>
               <input
-                className=" w-[50%] h-8"
+                className=" w-[50%] h-8 px-2  border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleChange}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -212,11 +212,11 @@ const Product = ({ history }) => {
               />
             </div>
             <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+              <label className="mb-1  text-md " htmlFor="">
                 کتگوری محصول
               </label>
               <input
-                className=" w-[50%] h-8"
+                className=" w-[50%] h-8 px-2  border border-blue-950 shadow bg-blue-600/10 outline-none"
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
                 onChange={handleCat}
@@ -227,11 +227,11 @@ const Product = ({ history }) => {
               />
             </div>
             <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+              <label className="mb-1  text-md " htmlFor="">
                 رنگ محصول
               </label>
               <input
-                className=" w-[50%] h-8"
+                className=" w-[50%] h-8 px-2  border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleColor}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -242,11 +242,11 @@ const Product = ({ history }) => {
               />
             </div>
             <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" htmlFor="">
+              <label className="mb-1  text-md " htmlFor="">
                 سایز محصول
               </label>
               <input
-                className=" w-[50%] h-8"
+                className=" w-[50%] h-8 px-2  border border-blue-950 shadow bg-blue-600/10 outline-none"
                 onChange={handleSize}
                 style={{ borderBottom: "1px solid gray" }}
                 type="text"
@@ -257,12 +257,12 @@ const Product = ({ history }) => {
               />
             </div>
             <div className="flex flex-col w-[50%] mt-3">
-              <label className="mb-1 text-base" for="stock">
+              <label className="mb-1  text-md " for="stock">
                 موجودی
               </label>
               <select
                 onChange={handleChange}
-                className="h-10 w-[50%] rounded-md pr-2"
+                className="h-10 w-[50%] rounded-md pr-2  border border-blue-950 shadow bg-blue-600/10 outline-none"
                 name="inStock"
                 id="stock"
               >
@@ -271,10 +271,11 @@ const Product = ({ history }) => {
               </select>
             </div>
           </div>
-          <div className="flex flex-col justify-between">
-            <div className="flex justify-center items-center">
+          <div className="flex flex-col justify-between items-center">
+            <div className="flex justify-centern flex-col items-center">
+            <img className="min-w-48 min-h-48 max-w-56 max-h-56" src={avatarPreview} alt="" />
               <label htmlFor="img">
-                <Publish className="cursor-pointer" />
+                <Publish className="cursor-pointer mt-4" />
               </label>
               <input
                 onChange={updateProductImg}
@@ -284,13 +285,12 @@ const Product = ({ history }) => {
                 name="avatar"
                 id="img"
               />
-              <img className="w-44 h-44" src={avatarPreview} alt="" />
             </div>
             <button
               onClick={updateProductSubmit}
-              className="p-1 rounded-md bg-teal-600 text-white"
+              className="px-4 py-1 rounded-md bg-teal-600 text-white"
             >
-              به روز رسانی
+              به روزرسانی
             </button>
           </div>
         </form>

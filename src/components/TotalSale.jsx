@@ -21,7 +21,7 @@ const TotalSale = () => {
   }
 
   return (
-    <div className="!text-orange-700 shadow w-64 h-28 mt-5 mr-5 justify-center flex items-center">
+    <div className="!text-orange-400/80 shadow bg-gray-800 rounded-2xl w-64 h-28 mt-5 mr-5 justify-center flex items-center">
       <AttachMoney className="!text-[50px] " />
       <div className="flex flex-col">
         <div className="text-[20px] m-2">جمع فروش</div>

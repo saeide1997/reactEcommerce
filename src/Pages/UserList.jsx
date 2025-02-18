@@ -26,7 +26,7 @@ const UserList = () => {
     {
       field: "userName",
       headerName: "نام کاربری",
-      width: 250,
+      width: 200,
       renderCell: (params) => {
         return (
           <div className="flex justify-center items-center">
@@ -44,7 +44,7 @@ const UserList = () => {
     {
       field: "createdAt",
       headerName: "تاریخ عضویت",
-      width: 200,
+      width: 180,
       renderCell: (params) => {
         return (
           <div>
@@ -65,17 +65,17 @@ const UserList = () => {
     {
       field: "action",
       headerName: "عملیات",
-      width: 100,
+      width: 180,
       renderCell: (params) => {
         return (
           <>
             <Link to={"/user/" + params.row._id}>
-              <button className="ml-2 bg-green-600 h-7 w-11 flex justify-center text-white rounded-md items-center">
+              <button className="ml-2 px-4 bg-teal-700 h-8 flex justify-center rounded-md items-center">
                 ویرایش
               </button>
             </Link>
             <DeleteOutline
-              className="text-red-700"
+              className="text-red-500 !text-3xl"
               onClick={() => handleDelete(params.row.id)}
             />
           </>
@@ -97,9 +97,9 @@ const UserList = () => {
   };
 
   return (
-    <div className="flex-6  mx-10 mt-10 ">
+    <div className=" mx-5 mt-10 !max-w-[calc(100vw-200px)]">
       <DataGrid
-        className=" w-full h-[80%]"
+        className=" h-[80%] rounded-lg"
         initialState={{
           pagination: {
             paginationModel: { pageSize: 8, page: 0 },

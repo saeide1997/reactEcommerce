@@ -42,9 +42,9 @@ const ProductList = () => {
           return(
             <>
             <Link to={"/product/"+params.row._id}>
-              <button className='ml-2 bg-green-600 h-7 w-11 flex justify-center text-white rounded-md items-center'>ویرایش</button>
+              <button className='ml-2 px-4 bg-teal-700 h-10 flex justify-center text-whit rounded-md items-center'>ویرایش</button>
             </Link>
-            <DeleteOutline className='text-red-700' onClick={()=>handleDelete(params.row._id)}/>
+            <DeleteOutline className='text-red-500 !text-3xl' onClick={()=>handleDelete(params.row._id)}/>
             </>
           )
         }
@@ -57,7 +57,7 @@ const ProductList = () => {
   }
 
     return (
-        <div className='flex-6  h-[80vh] mx-10 mt-10 ' >
+        <div className=' mx-10 mt-10 ' >
              <DataGrid className='lightShab max-w-full'
              initialState={{
               pagination: {

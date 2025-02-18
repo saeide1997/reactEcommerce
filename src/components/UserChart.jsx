@@ -43,12 +43,12 @@ const UserChart = () => {
     getStats();
   }, [months]);
   return (
-    <div className="w-[400px] h-[300px] ">
+    <div className="w-[400px] ">
       <Chart
-        classs="m-5 py-3 px-5 shadow"
-        c1= "#39007d"
-        c2= "#39007d"
-        c3= "#af6dff"
+        classs="m-5 py-3 px-5 shadow text-white bg-gray-800 rounded-2xl "
+        c1= "#d15864"
+        c2= "#d15864"
+        c3= "#d15864"
         height1="3"
         height2="2"
         data={userStats}

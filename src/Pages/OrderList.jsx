@@ -24,7 +24,7 @@ const OrderList = () => {
     {
       field: "title",
       headerName: "نام ",
-      width: 200,
+      width: 150,
       resizable: true,
       renderCell: (params) => {
         return (
@@ -38,7 +38,7 @@ const OrderList = () => {
     {
       field: "createdAt",
       headerName: "تاریخ ثبت سفارش",
-      width: 200,
+      width: 150,
       renderCell: (params) => {
         return (
           <div>
@@ -76,7 +76,7 @@ const OrderList = () => {
         return (
           <div
             className={
-              "w-20 h-8 flex items-center justify-center rounded-xl " +
+              " h-8 w-24 flex items-center justify-center rounded-xl " +
               statusColor
             }
           >
@@ -88,13 +88,13 @@ const OrderList = () => {
     {
       field: "action",
       headerName: "عملیات",
-      width: 110,
+      width: 150,
       resizable: true,
       renderCell: (params) => {
         return (
           <>
             <Link to={"/order/" + params.row._id}>
-              <button className="ml-2 bg-teal-600/50 shadow h-8 w-24 flex justify-center text-black rounded-md items-center hover:shadow-none">
+              <button className="ml-2 px-4 bg-teal-600/50 shadow h-10 flex justify-center rounded-md items-center hover:shadow-none">
                 جزییات سفارش
               </button>
             </Link>
@@ -105,7 +105,7 @@ const OrderList = () => {
   ];
 
   return (
-    <div className="flex-6  h-[80vh] mx-10 mt-10 ">
+    <div className=" !max-w-[calc(100vw-200px)] mx-10 mt-10 ">
       <DataGrid
         className="lightShab max-w-full"
         initialState={{

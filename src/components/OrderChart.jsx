@@ -41,12 +41,12 @@ const OrderChart = () => {
     getStats();
   }, [months]);
   return (
-    <div className="w-[400px] h-[300px] ">
+    <div className="w-[400px]  ">
       <Chart
-        classs="m-5 py-3 px-5 shadow"
-        c1= "#003123"
-        c2= "#003123"
-        c3= "#00aa7a"
+        classs="m-5 py-3 px-5  shadow bg-gray-800 rounded-2xl text-white "
+        c1= "#92b5b9"
+        c2= "#92b5b9"
+        c3= "#92b5b9"
         height1="3"
         height2="2"
         data={orderQuantity}

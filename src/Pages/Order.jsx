@@ -14,7 +14,7 @@ const Order = () => {
 
   return (
     <div className="flex-6 p-5 items-start ">
-      <div className=" flex p-10 justify-between shadow">
+      <div className=" flex p-10 justify-between shadow bg-gray-800 rounded-2xl text-white">
           <div className="" style={{ flex: "3" }}>
         {order.products.map((product) => (
           <>

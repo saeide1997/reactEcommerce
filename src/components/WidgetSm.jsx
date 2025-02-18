@@ -18,7 +18,7 @@ const WidgetSm = () => {
         getusers()
     }, [])
     return (
-        <div className='flex-1 shadow p-5 '>
+        <div className='flex-1 shadow p-5  text-white items-center bg-gray-800 rounded-2xl '>
              <span className="text-3xl">کاربران جدید</span>
       <ul className="m-0 p-0 w-full ">
         {users.map((user)=>
@@ -31,7 +31,7 @@ const WidgetSm = () => {
             <button
             className="flex-2 shadow  hover:shadow-none flex items-center border-none rounded-lg p-2 bg-teal-400/50 text-gray-800 cursor-pointer">
                 <Link to={"/user/" +user._id}>
-                <Visibility className="text-lg ml-1"/>
+                <Visibility className=" text-md  ml-1"/>
                 مشاهده
                 </Link>
             </button>
