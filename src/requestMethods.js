@@ -1,6 +1,6 @@
 import axios from 'axios'
 let TOKEN
-const BASE_URL = 'http://localhost:7000/api/'
+const BASE_URL = 'http://ecommercedata.up.railway.app/api/'
 if(localStorage.length>2 ){ 
     TOKEN = JSON.parse(JSON.parse(localStorage.getItem('persist:root')).user).currentUser.accessToken 
 }else{
