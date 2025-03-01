@@ -52,104 +52,103 @@ const FeaturedInfo = () => {
   // console.log('w',income);
 
   return (
-    <div className="flex justify-between">
-      <div className="flex-1 !w-1/5 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
-          <div className=" items-center flex justify-between ">
-            <span className="flex  text-md ">
-              درآمد{" "}
-              <h3 className="mr-2 text-green-300/50 font-bold ">
-                {monthDefini()}
-              </h3>
-            </span>
-            <span className="flex text-sm items-center mr-5 ltr">
-              {Math.floor(incomepercent)}%{" "}
-              {incomepercent > 0 && (
-                <ArrowUpward className="text-sm ml-1 text-green-500" />
-              )}
-              {incomepercent < 0 && (
-                <ArrowDownward className="text-sm ml-1 text-red-500" />
-              )}
-            </span>
-          </div>
+    <div className="flex justify-between flex-wrap">
+      <div className="flex-1 xl:!w-1/5 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+        <div className=" items-center flex justify-between ">
+          <span className="flex  text-md ">
+            درآمد{" "}
+            <h3 className="mr-2 text-green-300/50 font-bold ">
+              {monthDefini()}
+            </h3>
+          </span>
+          <span className="flex text-sm items-center mr-5 ltr">
+            {Math.floor(incomepercent)}%{" "}
+            {incomepercent > 0 && (
+              <ArrowUpward className="text-sm ml-1 text-green-500" />
+            )}
+            {incomepercent < 0 && (
+              <ArrowDownward className="text-sm ml-1 text-red-500" />
+            )}
+          </span>
+        </div>
         <div className="flex items-center  justify-between ">
           <span className=""> {nf.format(income.total)} ریال </span>
 
           <SavingsIcon className="!text-[70px] !text-green-300/60 mr-5" />
         </div>
       </div>
-      <div className="flex-1 !w-1/5 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
-          <div className=" items-center flex justify-between ">
-            <span className="flex  text-md ">
-              فروش{" "}
-              <h3 className="mr-2 text-orange-300/80 font-bold ">
-                {monthDefini()}
-              </h3>
-            </span>
-            <span className="flex text-sm items-center mr-5 ltr">
-              {Math.floor(incomepercent)}%{" "}
-              {incomepercent > 0 && (
-                <ArrowUpward className="text-sm ml-1 text-green-500" />
-              )}
-              {incomepercent < 0 && (
-                <ArrowDownward className="text-sm ml-1 text-red-500" />
-              )}
-            </span>
-          </div>
+      <div className="flex-1 xl:!w-1/5 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+        <div className=" items-center flex justify-between ">
+          <span className="flex  text-md ">
+            فروش{" "}
+            <h3 className="mr-2 text-orange-300/80 font-bold ">
+              {monthDefini()}
+            </h3>
+          </span>
+          <span className="flex text-sm items-center mr-5 ltr">
+            {Math.floor(incomepercent)}%{" "}
+            {incomepercent > 0 && (
+              <ArrowUpward className="text-sm ml-1 text-green-500" />
+            )}
+            {incomepercent < 0 && (
+              <ArrowDownward className="text-sm ml-1 text-red-500" />
+            )}
+          </span>
+        </div>
         <div className="flex items-center  justify-between ">
           <span className=""> {nf.format(income.total)} ریال </span>
 
           <ShoppingCartOutlined className="!text-[70px] !text-orange-300/80 mr-5" />
         </div>
       </div>
-      <div className="flex-1 !w-1/5 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
-          <div className=" items-center flex justify-between ">
-            <span className="flex  text-md ">
-              مرجوع{" "}
-              <h3 className="mr-2 !text-blue-300/80 font-bold ">
-                {monthDefini()}
-              </h3>
-            </span>
-            <span className="flex text-sm items-center mr-5 ltr">
-              {Math.floor(incomepercent)}%{" "}
-              {incomepercent > 0 && (
-                <ArrowUpward className="text-sm ml-1 text-green-500" />
-              )}
-              {incomepercent < 0 && (
-                <ArrowDownward className="text-sm ml-1 text-red-500" />
-              )}
-            </span>
-          </div>
+      <div className="flex-1 xl:!w-1/5 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+        <div className=" items-center flex justify-between ">
+          <span className="flex  text-md ">
+            مرجوع{" "}
+            <h3 className="mr-2 !text-blue-300/80 font-bold ">
+              {monthDefini()}
+            </h3>
+          </span>
+          <span className="flex text-sm items-center mr-5 ltr">
+            {Math.floor(incomepercent)}%{" "}
+            {incomepercent > 0 && (
+              <ArrowUpward className="text-sm ml-1 text-green-500" />
+            )}
+            {incomepercent < 0 && (
+              <ArrowDownward className="text-sm ml-1 text-red-500" />
+            )}
+          </span>
+        </div>
         <div className="flex items-center  justify-between ">
           <span className=""> {nf.format(income.total)} ریال </span>
 
           <AssignmentReturnIcon className="!text-[70px] !text-blue-300/80 mr-5" />
         </div>
       </div>
-      <div className="flex-1 !w-1/5 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
-          <div className=" items-center flex justify-between ">
-            <span className="flex  text-md ">
+      <div className="flex-1 xl:!w-1/5 lg:w-1/3 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+        <div className=" items-center flex justify-between ">
+          <span className="flex  text-md ">
             خرید{" "}
-              <h3 className="mr-2 text-red-300/80  font-bold ">
-                {monthDefini()}
-              </h3>
-            </span>
-            <span className="flex text-sm items-center mr-5 ltr">
-              {Math.floor(sellpercent)}%{" "}
-              {sellpercent > 0 && (
-                <ArrowUpward className="text-sm ml-1 text-green-500" />
-              )}
-              {sellpercent < 0 && (
-                <ArrowDownward className="text-sm ml-1 text-red-500" />
-              )}
-            </span>
-          </div>
+            <h3 className="mr-2 text-red-300/80  font-bold ">
+              {monthDefini()}
+            </h3>
+          </span>
+          <span className="flex text-sm items-center mr-5 ltr">
+            {Math.floor(sellpercent)}%{" "}
+            {sellpercent > 0 && (
+              <ArrowUpward className="text-sm ml-1 text-green-500" />
+            )}
+            {sellpercent < 0 && (
+              <ArrowDownward className="text-sm ml-1 text-red-500" />
+            )}
+          </span>
+        </div>
         <div className="flex items-center  justify-between ">
-        <span className=""> {nf.format(income.quantity)} محصول </span>
+          <span className=""> {nf.format(income.quantity)} محصول </span>
 
           <LocalMallIcon className="!text-[70px] !text-red-300/80  mr-5" />
         </div>
       </div>
-
     </div>
   );
 };

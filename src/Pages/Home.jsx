@@ -92,7 +92,7 @@ const Home = () => {
         dataKey="جمع سفارشات "
       />
       </div>
-      <div className="flex m-5 ">
+      <div className="flex sm:flex-col m-5 ">
         <WidgetLg />
         <WidgetSm />
       </div>

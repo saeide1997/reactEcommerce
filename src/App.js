@@ -37,7 +37,7 @@ function App() {
         {/* <> */}
       <Topbar />
       <div className="containerr">
-        <Sidebar />
+        <Sidebar className='lg:!hidden !block' />
         <Routes  history={history}>
           <Route path="/" element={<Home/>} />
           <Route path= "/userList" element={<UserList/>} />
