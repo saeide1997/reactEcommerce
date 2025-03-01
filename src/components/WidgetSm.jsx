@@ -18,9 +18,9 @@ const WidgetSm = () => {
         getusers()
     }, [])
     return (
-        <div className='flex-1 shadow p-5  text-white items-center bg-gray-800 rounded-2xl '>
-             <span className="text-3xl">کاربران جدید</span>
-      <ul className="m-0 p-0 w-full ">
+        <div className='flex-1 shadow p-5 mx-2 md:mx-5 my-2 text-white items-center bg-gray-800 rounded-2xl '>
+             <span className="text-xl md:text-2xl lg:text-3xl">کاربران جدید</span>
+      <ul className="m-0 p-0 w-full text-[10px] md:text-sm lg:text-base">
         {users.map((user)=>
         <li className="flex items-center justify-center my-5">
             <img className="flex-1 w-10 h-10 rounded-full object-cover " src={user.img || "https://cdn-icons-png.flaticon.com/512/219/219969.png"} alt="" />

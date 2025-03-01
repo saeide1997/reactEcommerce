@@ -13,13 +13,11 @@ import LoginPage from "./Pages/LoginPage";
 import OrderList from "./Pages/OrderList";
 import Order from "./Pages/Order";
 import Analisys from "./Pages/Analisys";
-import { useSelector } from "react-redux";
 
 function App() {
   const [message, setMessage] = useState("");
-  const user = useSelector((state) => state.user.currentUser);
-  console.log(user.token);
-  
+  const isAuthenticated = localStorage.getItem("token"); // بررسی لاگین بودن
+
   useEffect(() => {
     fetch("https://ecommercedata.up.railway.app/")
       .then((res) => res.text())
@@ -33,7 +31,7 @@ function App() {
         {/* اگر کاربر لاگین نکرده باشد، به صفحه لاگین هدایت شود */}
         <Route
           path="/"
-          element={user.token ? <MainLayout /> : <Navigate to="/login" />}
+          element={isAuthenticated ? <MainLayout /> : <Navigate to="/login" />}
         />
       </Routes>
     </BrowserRouter>

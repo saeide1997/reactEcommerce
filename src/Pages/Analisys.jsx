@@ -9,20 +9,20 @@ import UserChart from "../components/UserChart";
 
 const Analisys = () => {
   return (
-    <div className=" h-screen w-[calc(100vw-180px)] mt-5 ">
-      <div className="flex h-1/2 mx-3 ">
+    <div className=" w-[calc(100vw-180px)] mt-5 ">
+      <div className="flex flex-wrap mx-3 ">
         <UserChart className="" />
         <OrderChart className="" />
         <SellChart className="" />
       </div>
-      <div className="flex mx-3 h-1/2 mt-3">
+      <div className="flex flex-col md:flex-row mx-3 mt-3">
         <StatusChart className="" />
-        <div className="flex">
-            <div>
+        <div className="flex flex-wrap">
+            <div className="flex flex-wrap">
           <TotalUser />
           <TotalSale />
             </div>
-            <div>
+            <div className="flex flex-wrap">
           <TotalOrder />
           <TotalOrderQuantity />
             </div>

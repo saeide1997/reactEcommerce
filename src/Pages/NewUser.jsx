@@ -1,130 +1,67 @@
-import {    Publish } from "@mui/icons-material";
-  import { useState } from "react";
-  import { useDispatch } from "react-redux";
-  import {addUser} from '../redux/apiCalls'
+import { Publish } from "@mui/icons-material";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addUser } from "../redux/apiCalls";
 
 const NewUser = () => {
+  const [userInf, setUserInf] = useState({});
+  const dispatch = useDispatch();
 
-    const [userInf, setUserInf] = useState([]);
-    const dispatch = useDispatch();
-  
-    const handleChange = (e) => {
-      setUserInf((prev) => {
-        return { ...prev, [e.target.name]: e.target.value };
-      });
-    };
-  
-    const handleClick = (e) => {
-      e.preventDefault();
-      addUser(userInf, dispatch);
-    };
+  const handleChange = (e) => {
+    setUserInf((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
-    return (
-        <div className="flex-6 p-5 items-start">
-<div className=" p-5 m-5  shadow  bg-gray-800 rounded-2xl text-white">
-        <form className="  flex justify-between mt-5" action="">
-          <div className="flex-3 flex flex-wrap">
-            <div className="flex flex-col w-[50%] mt-3 mb-10">
-              <label className="mb-1 text-base" htmlFor="">
-                نام کاربری
-              </label>
-              <input
-                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
-                onChange={handleChange}
-                style={{ borderBottom: "1px solid gray" }}
-                type="text"
-                name="userName"
-                id=""
-              />
-            </div>
-            <div className="flex flex-col w-[50%] mt-3 mb-10">
-              <label className="mb-1 text-base" htmlFor="">
-                نام و نام خانوادگی{" "}
-              </label>
-              <input
-                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
-                onChange={handleChange}
-                style={{ borderBottom: "1px solid gray" }}
-                type="text"
-                name="fullname"
-                id=""
-              />
-            </div>
-            <div className="flex flex-col w-[50%] mt-3 mb-10">
-              <label className="mb-1 text-base" htmlFor="">
-                نقش{" "}
-              </label>
-              <input
-                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
-                onChange={handleChange}
-                style={{ borderBottom: "1px solid gray" }}
-                type="text"
-                name="role"
-                id=""
-              />
-            </div>
-            <div className="flex flex-col w-[50%] mt-3 mb-10">
-              <label className="mb-1 text-base" htmlFor="">
-                شماره تماس{" "}
-              </label>
-              <input
-                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
-                onChange={handleChange}
-                style={{ borderBottom: "1px solid gray" }}
-                type="tel"
-                name="mobile"
-                id=""
-              />
-            </div>
-            <div className="flex flex-col w-[50%] mt-3 mb-10">
-              <label className="mb-1 text-base" htmlFor="">
-                ایمیل{" "}
-              </label>
-              <input
-                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
-                onChange={handleChange}
-                style={{ borderBottom: "1px solid gray" }}
-                type="email"
-                name="email"
-                id=""
-              />
-            </div>
-            <div className="flex flex-col w-[50%] mt-3 mb-10">
-              <label className="mb-1 text-base" htmlFor="">
-                رمز عبور{" "}
-              </label>
-              <input
-                className=" w-[250px] h-8 px-3 py-4 border border-blue-950 shadow bg-blue-600/10 outline-none"
-                onChange={handleChange}
-                style={{ borderBottom: "1px solid gray" }}
-                type="password"
-                name="password"
-                id=""
-              />
-            </div>
+  const handleClick = (e) => {
+    e.preventDefault();
+    addUser(userInf, dispatch);
+  };
+
+  return (
+    <div className="flex flex-col items-center p-5 sm:flex-row sm:items-start">
+      <div className="p-5 m-5 shadow bg-gray-800 rounded-2xl text-white w-full max-w-4xl">
+        <form className="flex flex-col sm:flex-row justify-between mt-5">
+          <div className="flex flex-wrap w-full sm:w-2/3">
+            {[
+              { label: "نام کاربری", name: "userName", type: "text" },
+              { label: "نام و نام خانوادگی", name: "fullname", type: "text" },
+              { label: "نقش", name: "role", type: "text" },
+              { label: "شماره تماس", name: "mobile", type: "tel" },
+              { label: "ایمیل", name: "email", type: "email" },
+              { label: "رمز عبور", name: "password", type: "password" },
+            ].map((input, index) => (
+              <div key={index} className="flex flex-col w-full sm:w-1/2 px-2 mt-3">
+                <label className="mb-1 text-base">{input.label}</label>
+                <input
+                  className="w-full h-10 px-3 border border-blue-950 bg-blue-600/10 outline-none"
+                  onChange={handleChange}
+                  type={input.type}
+                  name={input.name}
+                />
+              </div>
+            ))}
           </div>
-          <div className="flex-1 flex flex-col justify-between">
-            <div className="flex justify-center items-center">
-              <label htmlFor="img">
-                <Publish className="cursor-pointer" />
+          <div className="flex flex-col items-center w-full sm:w-1/3 mt-5 sm:mt-0">
+            <div className="flex flex-col items-center">
+              <label htmlFor="img" className="cursor-pointer">
+                <Publish />
               </label>
               <input className="hidden" type="file" name="img" id="img" />
               <img
-                className="w-24 h-24"
+                className="w-24 h-24 mt-2"
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
                 alt=""
               />
             </div>
             <button
               onClick={handleClick}
-              className="p-1 rounded-md bg-teal-600 text-white">
+              className="mt-4 p-2 rounded-md bg-teal-600 text-white w-full max-w-[200px]">
               به روز رسانی
             </button>
           </div>
         </form>
       </div>
-      </div>
-    );
+    </div>
+  );
 };
 
 export default NewUser;

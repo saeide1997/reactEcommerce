@@ -40,24 +40,24 @@ const WidgetLg = () => {
     getOrders();
   }, []);
   return (
-    <div className="flex-2 shadow p-5 ml-5  text-white items-center bg-gray-800 rounded-2xl ">
-      <span className="text-3xl">آخرین تراکنشها</span>
-      <table className="border-separate border-spacing-6 w-full">
+    <div className="flex-2 shadow p-5 mx-2 md:mx-5  text-white items-center bg-gray-800 rounded-2xl ">
+      <span className="text-xl md:text-2xl lg:text-3xl">آخرین تراکنشها</span>
+      <table className="border-separate border-spacing-1 sm:border-spacing-2 md:border-spacing-3 lg:border-spacing-5  w-full text-[10px] md:text-sm lg:text-base">
         <thead className="text-center ">
-        <tr>
-          <th className="">مشتری</th>
-          <th className="">تاریخ</th>
-          <th className="">مقدار</th>
-          <th className="">وضعیت</th>
-          <th className="">عملیات</th>
+        <tr className=" flex items-center">
+          <th className="flex-1">مشتری</th>
+          <th className="flex-1">تاریخ</th>
+          <th className="flex-1">مقدار</th>
+          <th className="flex-1">وضعیت</th>
+          <th className="flex-1">عملیات</th>
           </tr>
         </thead>
-        <tbody className="text-center">
+        <tbody className="text-center items-center ">
           {orders.map((order) => (
-            <tr key={order._id} className=" items-center !h-10">
-              <td className="flex items-center">
+            <tr key={order._id} className=" flex items-center h-10 md:h-20">
+              <td className="flex flex-1 items-center">
                 <img
-                  className="w-10 object-cover rounded-full ml-5"
+                  className="w-5 md:w-10 object-cover rounded-full ml-5"
                   src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
                   alt=""
                 />
@@ -65,16 +65,16 @@ const WidgetLg = () => {
                   {/* {userInf.find((item) => item._id === order.userId).userName}{" "} */}
                 </span>
               </td>
-              <td className="mr-6 text-gray-500">{format(order.CreatedAt)}</td>
-              <td className="mr-6 text-gray-500">{nf.format(order.amount)}</td>
-              <td className="mr-6">
-                <button className={" w-20 h-8 flex items-center justify-center rounded-xl !text-sm " + statusCl(order.status)}>
+              <td className="flex-1 text-gray-500">{format(order.CreatedAt)}</td>
+              <td className="flex-1 text-gray-500">{nf.format(order.amount)}</td>
+              <td className="flex-1">
+                <button className={" w-10 h-4 sm:w-14 sm:h-5 md:w-20 md:h-6 lg:h-8 flex items-center justify-center rounded-xl text-[9px] md:text-base " + statusCl(order.status)}>
                   {" "}
                   {order.status}
                 </button>
               </td>
-              <td className="bg-teal-600 shadow mr-6 h-10 text-black font-semibold rounded-md  hover:shadow-none flex justify-center items-center">              
-              <button className=" ">
+              <td className="flex-1 flex items-center justify-center">              
+              <button className="bg-teal-600 shadow w-10 md:w-20 md:h-12 h-6 text-black font-semibold rounded-md text-[9px] md:text-base hover:shadow-none flex justify-center items-center ">
                 <Link to={"/order/" + order._id}>
                 جزییات سفارش
             </Link>

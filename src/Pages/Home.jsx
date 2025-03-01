@@ -64,35 +64,35 @@ const Home = () => {
     getStats();
   }, [months]);
   return (
-    <div className=" mt-5 w-[calc(100vw-150px)]">
+    <div className=" mt-5 w-[calc(100vw-115px)] md:w-[calc(100vw-150px)]">
       <FeaturedInfo />
-      <div className="flex">
-      <Chart
-        c1="#d15864"
-        c2="#d15864"
-        c3="#d15864"
-        height1="3"
-        height2="1"
-        classs="m-5 py-3 px-5  text-md  flex-1 shadow bg-gray-800 rounded-2xl text-white"
-        data={userStats}
-        title="فعالیت کاربران"
-        grid
-        dataKey="کاربر جدید"
-      />
-      <Chart
-        classs="m-5 py-3 px-5  text-md  flex-1 shadow bg-gray-800 rounded-2xl text-white "
-        c1= "#92b5b9"
-        c2= "#92b5b9"
-        c3= "#92b5b9"
-        height1="3"
-        height2="1"
-        data={orderQuantity}
-        title="سفارش ماهانه"
-        grid
-        dataKey="جمع سفارشات "
-      />
+      <div className="flex my-2 flex-col md:flex-row">
+        <Chart
+          c1="#d15864"
+          c2="#d15864"
+          c3="#d15864"
+          height1="2"
+          height2="1"
+          classs="mx-2 md:mx-5 my-2 py-1 px-2 sm:py-2 sm:px-3 lg:py-3 sm:px-5 text-md  flex-1 shadow bg-gray-800 rounded-2xl text-white"
+          data={userStats}
+          title="فعالیت کاربران"
+          grid
+          dataKey="کاربر جدید"
+        />
+        <Chart
+          classs="mx-2 md:mx-5 my-2 py-1 px-2 sm:py-2 sm:px-3 lg:py-3 sm:px-5 text-md  flex-1 shadow bg-gray-800 rounded-2xl text-white "
+          c1="#92b5b9"
+          c2="#92b5b9"
+          c3="#92b5b9"
+          height1="2"
+          height2="1"
+          data={orderQuantity}
+          title="سفارش ماهانه"
+          grid
+          dataKey="جمع سفارشات "
+        />
       </div>
-      <div className="flex sm:flex-col m-5 ">
+      <div className="flex my-2 flex-col lg:flex-row ">
         <WidgetLg />
         <WidgetSm />
       </div>

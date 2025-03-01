@@ -7,7 +7,7 @@ const TotalUser = () => {
 
   var nf = new Intl.NumberFormat();
   return (
-        <div className="!text-pink-400/60 shadow bg-gray-800 rounded-2xl w-64 h-28 m-5 justify-center flex items-center">
+        <div className="!text-pink-400/60 shadow bg-gray-800 rounded-2xl w-64 h-28 m-2 sm:m-5 py-1 px-3 sm:py-3 sm:px-5 justify-center flex items-center">
         <PeopleOutlined className="!text-[50px]" />
         <div className="flex flex-col">
           <div className="text-[20px] m-2">جمع کاربران</div>

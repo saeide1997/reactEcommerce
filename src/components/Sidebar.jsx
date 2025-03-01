@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="!min-w-40 h-[calc(100vh-74px)] sticky top-16  bg-gray-800 Sahdow3d rounded-bl-3xl">
+    <div className="w-30 md:w-40 h-[calc(100vh-74px)] sticky top-16  bg-gray-800 Sahdow3d rounded-bl-3xl">
       <div className="py-5 px-3 text-teal-100  ">
         <div className="mb-1  ">
             <h3 className=" p-1 boldShab text-white  ">داشبورد</h3>

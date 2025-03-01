@@ -44,9 +44,9 @@ const SellChart = () => {
     getStats();
   }, [months]);
   return (
-    <div className="w-[400px] h-[300px] ">
+    <div className="flex-1 min-w-64 max-w-96 ">
       <Chart
-        classs="m-5 py-3 px-5  shadow bg-gray-800 rounded-2xl text-white "
+        classs="m-2 sm:m-5 py-1 px-3 sm:py-3 sm:px-5 shadow bg-gray-800 rounded-2xl text-white "
         c1= "#d5b4b5"
         c2= "#d5b4b5"
         c3= "#d5b4b5"

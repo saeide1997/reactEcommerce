@@ -52,10 +52,10 @@ const StatusChart = () => {
   };
 
   return (
-    <div className=" shadow p-3 !max-h-[260px] text-white bg-gray-800 rounded-2xl min-w-[500px] ">
+    <div className=" shadow m-2 sm:m-5 py-1 px-3 sm:py-3 sm:px-5  text-white bg-gray-800 rounded-2xl">
       <h2 className="  text-md  mx-2 mb-4">وضعیت سفارشات</h2>
-      <div className="flex items-center">
-        <div>
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="">
           <PieChart width={200} height={200}>
             <Pie
               activeIndex={activeIndex}
@@ -77,7 +77,7 @@ const StatusChart = () => {
             <Tooltip />
           </PieChart>
         </div>
-        <div className="mx-10">
+        <div className="mr-8 w-40">
           <div className="flex my-3 items-center">
             <div className="h-5 w-5 bg-orange-400/50 rounded-full mx-3"></div>
             <span className="">در انتظار برسی</span>

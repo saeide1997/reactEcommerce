@@ -53,7 +53,7 @@ const FeaturedInfo = () => {
 
   return (
     <div className="flex justify-between flex-wrap">
-      <div className="flex-1 xl:!w-1/5 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+      <div className="flex-1 xl:!w-1/5 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] my-2 mx-2 md:mx-5 p-7 shadow">
         <div className=" items-center flex justify-between ">
           <span className="flex  text-md ">
             درآمد{" "}
@@ -77,7 +77,7 @@ const FeaturedInfo = () => {
           <SavingsIcon className="!text-[70px] !text-green-300/60 mr-5" />
         </div>
       </div>
-      <div className="flex-1 xl:!w-1/5 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+      <div className="flex-1 xl:!w-1/5 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] my-2 mx-2 md:mx-5 p-7 shadow">
         <div className=" items-center flex justify-between ">
           <span className="flex  text-md ">
             فروش{" "}
@@ -101,7 +101,7 @@ const FeaturedInfo = () => {
           <ShoppingCartOutlined className="!text-[70px] !text-orange-300/80 mr-5" />
         </div>
       </div>
-      <div className="flex-1 xl:!w-1/5 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+      <div className="flex-1 xl:!w-1/5 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] my-2 mx-2 md:mx-5 p-7 shadow">
         <div className=" items-center flex justify-between ">
           <span className="flex  text-md ">
             مرجوع{" "}
@@ -125,7 +125,7 @@ const FeaturedInfo = () => {
           <AssignmentReturnIcon className="!text-[70px] !text-blue-300/80 mr-5" />
         </div>
       </div>
-      <div className="flex-1 xl:!w-1/5 lg:w-1/3 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] mx-5 p-7 shadow">
+      <div className="flex-1 xl:!w-1/5 lg:w-1/3 md:w-1/3 flex flex-col  text-white  bg-gray-800 rounded-2xl h-[150px] my-2 mx-2 md:mx-5 p-7 shadow">
         <div className=" items-center flex justify-between ">
           <span className="flex  text-md ">
             خرید{" "}
