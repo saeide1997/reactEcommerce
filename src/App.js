@@ -1,9 +1,9 @@
 import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
 import Home from "./Pages/Home";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
-import UserList from "./Pages/UserList";
+import UserList from './Pages/UserList';
 import User from "./Pages/User";
 import NewUser from "./Pages/NewUser";
 import ProductList from "./Pages/ProductList";
@@ -12,57 +12,52 @@ import NewProduct from "./Pages/NewProduct";
 import LoginPage from "./Pages/LoginPage";
 import OrderList from "./Pages/OrderList";
 import Order from "./Pages/Order";
+import { createBrowserHistory } from 'history';
 import Analisys from "./Pages/Analisys";
-import { useSelector } from "react-redux";
+const history = createBrowserHistory();
 
 function App() {
   const [message, setMessage] = useState("");
-  const user = useSelector((state) => state.user.currentUser);
-  console.log(user.token);
-  
+
   useEffect(() => {
     fetch("https://ecommercedata.up.railway.app/")
       .then((res) => res.text())
       .then((data) => setMessage(data));
   }, []);
-
+  console.log(message);
+  // const admin = JSON.parse(JSON.parse(localStorage.getItem('persist:root')).user).currentUser.isAdmin
   return (
+    
     <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        {/* اگر کاربر لاگین نکرده باشد، به صفحه لاگین هدایت شود */}
-        <Route
-          path="/"
-          element={user.token ? <MainLayout /> : <Navigate to="/login" />}
-        />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+    <Routes>
+          <Route path="/login" element={<LoginPage/>} />
+          </Routes>
 
-// کامپوننتی که کل ساختار صفحه لاگین‌شده را نگه می‌دارد
-const MainLayout = () => {
-  return (
-    <>
+      {/* if(admin){ */}
+        {/* <> */}
       <Topbar />
       <div className="containerr">
-        <Sidebar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/userList" element={<UserList />} />
-          <Route path="/user/:userId" element={<User />} />
-          <Route path="/newUser" element={<NewUser />} />
-          <Route path="/products" element={<ProductList />} />
-          <Route path="/product/:Id" element={<Product />} />
-          <Route path="/newProduct" element={<NewProduct />} />
-          <Route path="/orders" element={<OrderList />} />
-          <Route path="/order/:orderId" element={<Order />} />
-          <Route path="/analisys" element={<Analisys />} />
-          <Route path="*" element={<Navigate to="/" />} />
+        <Sidebar className='lg:!hidden !block' />
+        <Routes  history={history}>
+          <Route path="/" element={<Home/>} />
+          <Route path= "/userList" element={<UserList/>} />
+          <Route path= "/user/:userId" element={<User/>} />
+          <Route path= "/newUser" element={<NewUser/>} />
+          <Route path= "/products" element={<ProductList/>} />
+          <Route path= "/product/:Id" element={<Product/>} />
+          <Route path= "/newProduct" element={<NewProduct/>} />
+          <Route path= "/orders" element={<OrderList/>} />
+          <Route path= "/order/:orderId" element={<Order/>} />
+          <Route path= "/analisys" element={<Analisys/>} />
+          <Route path="*" element={''} />
         </Routes>
-      </div>
-    </>
+        </div>
+        {/* </>} */}
+    </BrowserRouter>
+
   );
-};
+
+
+}
 
 export default App;
